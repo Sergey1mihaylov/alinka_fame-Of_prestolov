@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#101714">
+  <meta name="description" content="Алина, Хогвартс ждал именно тебя. Твоё личное письмо, факультет, уроки магии и маленькие чудеса каждый день.">
+  <title>Алина · Твоя история в Хогвартсе</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Магия Алины">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/crest.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/hogwarts-night.jpg" as="image">
+  <link rel="stylesheet" href="mobile.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5c-3-2-7-2-10-1v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1v15M5 8h4M15 8h4M5 12h4M15 12h4"/></symbol>
+    <symbol id="i-wand" viewBox="0 0 24 24"><path d="m4 20 12-12 4 4L8 24M14 10l4 4M5 2v5M2.5 4.5h5M19 1v4M17 3h4M4 12v4M2 14h4" transform="translate(0 -2)"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="m2 5 7-3 6 3 7-3v17l-7 3-6-3-7 3zM9 2v17M15 5v17"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 22v-3a8 8 0 0 1 16 0v3"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3 6.2 6.8 1-4.9 4.8 1.2 6.8-6.1-3.2-6.1 3.2 1.2-6.8L2.2 9.2l6.8-1z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4M12 14v3"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24"><path d="M8 2h8M9 2v7l-6 10q-1 3 2 3h14q3 0 2-3L15 9V2M6 15h12"/><circle cx="12" cy="18" r="1"/></symbol>
+    <symbol id="i-hat" viewBox="0 0 64 64"><path d="m14 44 9-24 12-13-3 14 9 8 8 15M14 44c-16 5-11 12 18 12s34-7 17-12c-10 6-26 6-35 0zM20 33l20 4M27 27l6 2M27 41l8 1"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 3h10v6a5 5 0 0 1-10 0zM7 5H3v3a4 4 0 0 0 5 4M17 5h4v3a4 4 0 0 1-5 4M12 14v6M7 22h10M9 20h6"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 13A9 9 0 0 1 11 3a9 9 0 1 0 10 10z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+  </defs></svg>
+  <aside class="sidebar">
+    <a class="brand" href="#home" aria-label="Хогвартс для Алины — главная"><img src="assets/crest.svg" alt="" width="46" height="54"><span>ХОГВАРТС<small>ОСОБЕННЫЙ МИР АЛИНЫ</small></span></a>
+    <div class="sidebar-rule"><span>✧</span></div>
+    <span class="nav-caption">ТВОЁ ПРИКЛЮЧЕНИЕ</span>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#home" data-page="home" class="active" aria-label="Главная"><svg><use href="#i-home"/></svg><span class="nav-label">Главная</span></a>
+      <a href="#lessons" data-page="lessons" aria-label="Уроки магии"><svg><use href="#i-book"/></svg><span class="nav-label">Уроки</span></a>
+      <a href="#quests" data-page="quests" aria-label="Магические задания"><svg><use href="#i-wand"/></svg><span class="nav-label">Задания</span><span class="nav-count" id="quest-count">3</span></a>
+      <a href="#map" data-page="map" aria-label="Карта Хогвартса"><svg><use href="#i-map"/></svg><span class="nav-label">Карта</span></a>
+      <a href="#profile" data-page="profile" aria-label="Профиль Алины"><svg><use href="#i-user"/></svg><span class="nav-label">Профиль</span></a>
+    </nav>
+    <div class="sidebar-note"><svg><use href="#i-moon"/></svg><p>«Счастье можно найти даже<br>в тёмные времена…»</p><small>Нужно лишь зажечь свет.</small></div>
+    <button class="sidebar-profile" data-action="profile"><span class="avatar">А</span><span><b id="sidebar-name">Алина</b><small id="sidebar-level">Первый курс</small></span><span class="profile-star">✧</span></button>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><a href="#home" class="mobile-brand" aria-label="Главная — мир Алины"><img src="assets/crest.svg" alt="" width="29" height="34"><span>ХОГВАРТС<small>ДЛЯ АЛИНЫ</small></span></a><span class="desktop-greeting">Немного волшебства — специально для Алины</span><div class="topbar-right"><span class="point-balance" aria-label="Очки магии"><svg><use href="#i-spark"/></svg><b id="points-top">0</b><span>очков</span></span><button class="avatar small" data-action="profile" aria-label="Открыть профиль Алины">А</button></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="footer"><span>Алина, в тебе больше магии, чем ты думаешь.</span><span>Твоя маленькая история · Неофициальный фан-проект <span aria-hidden="true">✧</span></span></footer>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"><div class="sheet-handle" aria-hidden="true"></div><div class="modal-top"><span class="eyebrow">ХОГВАРТС · ДЛЯ АЛИНЫ</span><button class="icon-button" data-action="close-modal" aria-label="Закрыть"><svg><use href="#i-close"/></svg></button></div><div id="modal-body"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
